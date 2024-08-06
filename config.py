@@ -18,35 +18,35 @@ def is_enabled(value, default):
         return default
       
 # Bot Information
-API_ID = int(environ.get("API_ID", ""))
-API_HASH = environ.get("API_HASH", "")
+API_ID = int(environ.get("API_ID", "20408350"))
+API_HASH = environ.get("API_HASH", "5a82fc4cdb04d5874b77e902ba903271")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
 PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-BOT_USERNAME = environ.get("BOT_USERNAME", "") # without @
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7372840699').split()]
+BOT_USERNAME = environ.get("BOT_USERNAME", "LKDFILESHARING_01_BOT") # without @
 PORT = environ.get("PORT", "8080")
 
 # Clone Info :-
 CLONE_MODE = bool(environ.get('CLONE_MODE', True)) # Set True or False
 
 # If Clone Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-CLONE_DB_URI = environ.get("CLONE_DB_URI", "")
-CDB_NAME = environ.get("CDB_NAME", "clonetechvj")
+CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://gangstertown3dbeat:gdZc95TCr7X4NVjN@lkdfilesharing01.swznwco.mongodb.net/?retryWrites=true&w=majority&appName=LKDFILESHARING01")
+CDB_NAME = environ.get("CDB_NAME", "gangstertown3dbeat")
 
 # Database Information
-DB_URI = environ.get("DB_URI", "")
-DB_NAME = environ.get("DB_NAME", "techvjbotz")
+DB_URI = environ.get("DB_URI", "singhlovepreet05198")
+DB_NAME = environ.get("DB_NAME", "mongodb+srv://singhlovepreet05198:K6wo5uVJ1PmKl2Li@lkdfilesharing.j5g5msi.mongodb.net/?retryWrites=true&w=majority&appName=LKDFILESHARING")
 
 # Auto Delete Information
-AUTO_DELETE_MODE = bool(environ.get('AUTO_DELETE_MODE', True)) # Set True or False
+AUTO_DELETE_MODE = bool(environ.get('AUTO_DELETE_MODE', False)) # Set True or False
 
 # If Auto Delete Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 AUTO_DELETE = int(environ.get("AUTO_DELETE", "30")) # Time in Minutes
 AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "1800")) # Time in Seconds
 
 # Channel Information
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", ""))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002162688170"))
 
 # File Caption Information
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
