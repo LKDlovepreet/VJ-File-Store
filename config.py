@@ -21,7 +21,7 @@ BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
 PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6261595158').split()]
-BOT_USERNAME = environ.get("BOT_USERNAME", "LKDadultstore_bot") # without @
+BOT_USERNAME = environ.get("BOT_USERNAME", "@LKDFILESHARING0bot") # without @
 PORT = environ.get("PORT", "8080")
 
 # Clone Info :-
@@ -32,8 +32,8 @@ CLONE_DB_URI = environ.get("CLONE_DB_URI", "")
 CDB_NAME = environ.get("CDB_NAME", "")
 
 # Database Information
-DB_URI = environ.get("DB_URI", "sislovesme41")
-DB_NAME = environ.get("DB_NAME", "mongodb+srv://sislovesme41:7gkhYUTSnK5Di7Iu@cluster0.j3dsb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = environ.get("DB_URI", "mongodb+srv://gangstertown5911:jLKUtc4BTfBQ75Lm@cluster0.clgw2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_NAME = environ.get("DB_NAME", "sample.flix")
 
 # Auto Delete Information
 AUTO_DELETE_MODE = bool(environ.get('AUTO_DELETE_MODE', False)) # Set True or False
